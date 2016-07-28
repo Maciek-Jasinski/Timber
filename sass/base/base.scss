@@ -1,0 +1,47 @@
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1.5em;
+   background-color: $brand-white;
+   font-family: $base-font;
+   position: relative;
+   min-width: 300px;
+   margin: 0;
+}
+
+.site-main,
+.site-footer{
+   overflow: hidden;
+   width: 100%;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-bottom: 8vw solid $brand-white;
+	border-left: 100vw solid transparent;
+   margin-bottom: -5px;
+}
+
+.triangle2 {
+   width: 0;
+   height: 0;
+   border-top: 8vw solid $brand-white;
+   border-right: 100vw solid transparent;
+   margin-bottom: -5px;
+}
+
+.triangle3 {
+   width: 0;
+   height: 0;
+   border-bottom: 8vw solid $brand-light-black;
+   border-left: 100vw solid transparent;
+   margin-bottom: -5px;
+}
+
+.clearfix {
+   overflow: auto;
+}
+

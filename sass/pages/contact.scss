@@ -1,0 +1,241 @@
+.contact {
+	text-align: center;
+	padding-bottom: 75px;
+	&__intro {
+		background: url(../images/bgTop.jpg) center no-repeat;
+		background-size: cover;
+		text-align: center;
+		&__title {
+			animation: 2s bg backwards paused;
+			@extend %header;
+			padding: 20px 30px;
+			padding-top: 100px;
+		}
+		&__description {
+			animation: 2s bg 0.4s backwards paused;
+			@extend %description2;
+			color: $brand-white;
+			padding: 0px 30px;
+			padding-bottom: 100px;
+		}
+	}
+	&__form {
+		animation: 1s slide-up 0.8s backwards paused;
+		padding: 65px 20px;
+		padding-bottom: 25px;
+		text-align: center;
+		overflow: hidden;
+		&__field {
+			font-family: $base-font;
+			width: 95%;
+			padding: 10px;
+			margin: 10px 0;
+			border: none;
+			background-color: $brand-field;
+			border-radius: 6px;
+			&:nth-child(4) {
+				height: 140px;
+			}
+			&:focus {
+				background-color: #cbcbcb;
+			}			
+		}
+		&__clear {
+			float: left;
+			margin-left: 2.5%;
+			@extend %button2;
+			transition: 0.4s;
+			margin-top: 15px;
+			margin-bottom: 0;
+			&:hover {
+				background-color: $brand-blue;
+				border-color: $brand-button-border;
+				transition: 0.4s;
+			}
+			&:before {
+				padding-right: 8px;
+			}
+		}
+		&__send {
+			float: left;
+			margin: 0 5px;
+			margin-top: 15px;
+			@extend %button3;
+			transition: 0.4s;
+			&:hover {
+				background-color: $brand-light-black;
+				border-color: $brand-black;
+				transition: 0.4s;
+			}
+			&:before {
+				padding-right: 8px;
+			}
+		}
+	}
+	&__location {
+		animation: 1s slide-down 0.8s backwards paused;
+		padding: 0 20px;
+		text-align: left;
+		padding-bottom: 25px;
+		&__list {
+			padding-left: 2.5%;
+			&__item {
+				@extend %description3;
+				&>a {
+					color: $brand-blue;
+					transition: 0.3s;
+					&:hover {
+						color: $brand-light-black;
+						transition: 0.3s;
+					}
+				}
+				&:before {
+					padding-right: 7px;
+				}
+			}
+		}		
+	}
+	&__google-map {
+		width: 100%;
+   		height: 300px;
+    	background-color: $brand-white;
+	}
+	&__summary {
+		padding-top: 20px;
+		text-align: center;
+		&__title {
+			animation: 1s slide-right 1.1s backwards paused;
+			padding-left: 20px;
+			padding-right: 20px;
+			@extend %header2;
+		}
+		&__description {
+			animation: 1s slide-left 1.1s backwards paused;
+			padding: 0 20px;
+			@extend %description2;
+			padding-bottom: 50px;
+		}
+		&__features {
+			animation: 1s slide-up 1.3s backwards paused;
+			@extend %button2;
+			transition: 0.4s;
+			&:hover {
+				background-color: $brand-blue;
+				border-color: $brand-button-border;
+				transition: 0.4s;
+			}
+			&:before {
+				padding-right: 8px;
+			}
+		}
+		&__buy {
+			animation: 1s slide-up 1.3s backwards paused;
+			@extend %button3;
+			transition: 0.4s;
+			&:hover {
+				background-color: $brand-light-black;
+				border-color: $brand-black;
+				transition: 0.4s;
+			}
+			&:before {
+				padding-right: 8px;
+			}
+		}
+	}
+}
+#google-map {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 0;
+    	height: 0;
+    	border-top: 8vw solid $brand-white;
+    	border-right: 100vw solid transparent;
+    	margin-bottom: -5px;
+    	z-index: 1000;
+	}
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		right: 0;
+		width: 0;
+    	height: 0;
+    	border-bottom: 8vw solid $brand-white;
+		border-left: 100vw solid transparent;
+ 		margin-bottom: -5px;
+	}
+}
+@media (min-width: 550px) {
+	.contact {
+		overflow: hidden;
+		&__form,
+		&__location,
+		&__summary {
+			padding-left: calc(50% - 260px);
+			padding-right: calc(50% - 260px);
+		}
+	}
+
+}
+
+@media (min-width: 750px) {
+	.contact {
+		&__form,
+		&__location,
+		&__summary {
+			padding-left: calc(50% - 260px);
+			padding-right: calc(50% - 260px);
+		}
+	}
+}
+@media (min-width: 1000px) {
+	.contact {
+		&__summary {
+			padding-left: calc(50% - 500px);
+			padding-right: calc(50% - 500px);
+		}
+		&__form {
+			float: left;
+			width: 65%;
+			padding-left: calc(50% - 500px);
+			padding-right: 0;
+		}
+		&__location {
+			padding-top: 80px;
+			padding-right: calc(50% - 500px);
+			padding-left: 0;
+			&__list__item {
+				line-height: 220%;
+			}
+		}
+		&__summary {
+			padding-top: 100px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.contact {
+		&__summary {
+			padding-left: calc(50% - 580px);
+			padding-right: calc(50% - 580px);
+		}
+	}
+	.contact {
+		&__location {
+			padding-right: calc(50% - 580px);
+			padding-left: 0;
+		}
+	}
+	.contact {
+		&__form {
+			padding-left: calc(50% - 580px);
+			padding-right: 0;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.logo {
+	animation: 1s slide-right 0.4s backwards;
+	font-family: $logo-font;
+	padding: 10px;
+	float: left;
+	text-align: center;
+	&__title {
+		color: $brand-white;
+		&>h3{
+			text-transform: uppercase;
+			@include font-size($logo-font-sizes);
+			&>span {
+				color: $brand-blue;
+			}
+		}
+		&>p {
+			@include font-size($logo-description-font-sizes);
+			letter-spacing: 1px;
+			font-weight: light;
+		}
+	}
+}
+
+@media (min-width: 750px) {
+	.logo {
+		padding: 20px;
+	}
+}
+@media (min-width: 1000px) {
+	.logo{
+		padding: 0;
+		padding-top: 20px;
+	}
+}

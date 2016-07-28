@@ -1,0 +1,95 @@
+$base-font: 'Roboto', sans-serif;
+$logo-font: 'Roboto Slab', serif;
+$home-font: 'Open Sans', sans-serif;
+
+$breakpoints: (
+  'small': 550px,
+  'medium': 750px,
+  'large': 1000px,
+);
+$h1-font-sizes: (
+  'null'  : 4.5em,
+  'small': 5em,
+  'medium': 5.5em,
+  'large': 6.5em
+);
+$h2-font-sizes: (
+  'null'  : 2.8em,
+  'small' : 2.8em,
+  'medium': 2.8em,
+  'large' : 2.8em
+);
+$h3-font-sizes: (
+  'null'  : 1.8em,
+  'small' : 1.8em,
+  'medium': 1.8em,
+);
+$h4-font-sizes: (
+  'null'  : 1.3em,
+  'small' : 1.4em,
+  'medium': 1.5em,
+);
+$h5-font-sizes: (
+  'null'  : 1.15em,
+  'small' : 1.3em,
+  'medium': 1.1em,
+);
+$logo-font-sizes: (
+  'null'  : 2em,
+);
+$logo-description-font-sizes: (
+  'null' : 0.8em,
+);
+$menu-font-sizes: (
+  'null'  : 1.1em,
+  'medium': 1.4em,
+);
+$menu-item-font-sizes: (
+  'null'  : 1.0em,
+  'large' : 1.1em
+);
+$description-header-font-sizes: (
+  'null'  : 1.2em,
+  'small' : 1.4em,
+  'medium': 1.4em,
+);
+$description-font-sizes: (
+  'null' : 1em,
+  'small': 1.2em,
+  'medium' : 1.2em,
+);
+$description-item-font-sizes: (
+  'null' : 0.9em,
+  'small': 0.9em,
+  'medium' : 1em,
+);
+$button-font-sizes: (
+  'null' : 0.8em,
+  'small': 0.8em,
+  'medium' : 0.9em,
+);
+$big-button-font-sizes: (
+  'null' : 0.9em,
+);
+$work-picture-item-sizes: (
+  'null' : 0.9em,
+  'small': 1.1em,
+  'medium' : 0.9em,
+);
+$downline-font-sizes: (
+  'null'  : 0.9em,
+  'medium' : 1.1em,
+);
+
+
+
+$brand-dots: #bdafac;
+$brand-blue: #1fcdff;
+$brand-white: #fff;
+$brand-black: #000;
+$brand-gray-description: #808080;
+$brand-light-black: #2f2f2f;
+$brand-like-hover: #fd5f5b;
+$brand-button-border: #179abf;
+$brand-icons: #a9a9a9;
+$brand-field: #ededed;

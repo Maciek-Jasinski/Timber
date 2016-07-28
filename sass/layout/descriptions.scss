@@ -1,0 +1,13 @@
+%description3 {
+	@include font-size($description-item-font-sizes);
+	color: $brand-gray-description;
+	line-height: 200%;
+	font-weight: 300;
+}
+%description2 {
+	@include font-size($description-font-sizes);
+	color: $brand-light-black;
+	letter-spacing: 1px;
+	line-height: 125%;
+	font-weight: 300;
+}

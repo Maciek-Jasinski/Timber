@@ -1,0 +1,197 @@
+.works {
+	text-align: center;
+	padding-bottom: 75px;
+	&__intro {
+		background: url(../images/bgTop.jpg) center no-repeat;
+		background-size: cover;
+		text-align: center;
+		&__title {
+			animation: 2s bg backwards paused;
+			@extend %header;
+			padding: 20px 30px;
+			padding-top: 100px;
+		}
+		&__description {
+			animation: 2s bg 0.4s backwards paused;
+			@extend %description2;
+			color: $brand-white;
+			padding: 0px 30px;
+			padding-bottom: 100px;
+		}
+	}
+	&__projects {
+		&__titles {
+			padding: 40px;
+			padding-bottom: 70px;
+			&__item {
+				@extend %button1;
+				display: inline-block;
+				transition: 0.4s;
+				&:hover {
+					background-color: $brand-blue;
+					border-color: $brand-button-border;
+					transition: 0.4s;
+				}
+				&:nth-child(1) {
+				animation: 1s slide-left 0.6s backwards paused;
+				}
+				&:nth-child(2) {
+					animation: 1s slide-left 0.8s backwards paused;
+				}
+				&:nth-child(3) {
+					animation: 1s slide-left 1s backwards paused;
+				}
+				&:nth-child(4) {
+					animation: 1s slide-left 1.2s backwards paused;
+				}
+				&:nth-child(5) {
+					animation: 1s slide-left 1.4s backwards paused;
+				}
+			}
+		}
+		&__list {
+			padding: 0 20px;
+			min-height: 390px;
+			&__item {
+				text-align: center;
+				overflow: hidden;
+				&__link {
+					overflow: hidden;
+					display: block;
+					&__photo {
+						width: 100%;
+						max-width: 500px;
+						border-radius: 7px;
+						transition: 0.6s;
+					}
+					&:hover .works__projects__list__item__link__photo {
+						transform: scale(1.1);
+						transition: 0.6s;
+					}
+				}
+				&__title {
+					@extend %header4;
+					padding-bottom: 13px;
+				}
+				&__stats {
+					padding-bottom: 45px;
+					&__count {
+						display: inline-block;
+						padding: 0 10px;
+						color: $brand-icons;
+						transition: 0.3s;
+						&:nth-child(2) {
+							&:hover {
+								cursor: pointer;
+								color: $brand-like-hover;
+								transition: 0.3s;
+							}
+						}
+					}
+				}
+       			&:nth-child(10),
+				&:nth-child(11),
+				&:nth-child(12) {
+					display: none;
+				}
+			}
+		}
+	}
+	&__load {
+		animation: 1s slide-right 3.3s backwards paused;
+		@extend %button2;
+		transition: 0.4s;
+		&:hover {
+			background-color: $brand-blue;
+			border-color: $brand-button-border;
+			transition: 0.4s;
+		}
+		&:before {
+			padding-right: 8px;
+		}
+	}
+	&__buy {
+		animation: 1s slide-left 3.3s backwards paused;
+		@extend %button3;
+		transition: 0.4s;
+		&:hover {
+			background-color: $brand-light-black;
+			border-color: $brand-black;
+			transition: 0.4s;
+		}
+		&:before {
+			padding-right: 8px;
+		}
+	}
+}
+.active {
+   background-color: $brand-blue;
+   border-color: $brand-button-border;
+   transition: 0.4s;
+}
+@media (min-width: 550px) {
+	.works {
+		&__intro {
+			&__title{
+				padding-top: 40px;
+			}
+			&__description {
+				padding-bottom: 90px;
+			}
+		}
+	}
+}
+@media (min-width: 630px) {
+	.works__projects__titles {
+		text-align: center;
+	}
+}
+@media (min-width: 750px) {
+	.works {
+		&__intro {
+			&__title{
+				padding-top: 20px;
+			}
+			&__description {
+				padding-bottom: 50px;
+			}
+		}
+	}
+}
+@media (min-width: 1000px) {
+	.works { 
+		&__projects {
+			padding-left: calc(50% - 500px);
+			padding-right: calc(50% - 500px);
+		}
+		&__projects {
+			&__list {
+				overflow: hidden;
+				&__item {
+					width: 33.33%;
+					float: left;
+					box-sizing: border-box;
+					padding: 0 10px;
+				}
+			}
+		}
+		&__load {
+			margin-right: 30px;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.works {
+		&__projects {
+			padding-left: calc(50% - 580px);
+			padding-right: calc(50% - 580px);
+		}
+		&__projects {
+			&__list {
+				&__item {
+					padding: 0 20px;
+				}
+			}
+		}
+	}
+}

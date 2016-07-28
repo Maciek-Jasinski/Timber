@@ -1,0 +1,215 @@
+.subscribe {
+	text-align: center;
+	background: url(../images/bgTop.jpg) center no-repeat;
+	background-size: cover;
+	text-align: center;
+	&__title {
+		animation: 2s bg backwards paused;
+		@extend %header;
+		padding: 20px 30px;
+		padding-top: 100px;
+	}
+	&__description {
+		animation: 2s slide-up 0.4s backwards paused;
+		@extend %description2;
+		color: $brand-white;
+		padding: 0px 30px;
+		padding-bottom: 40px;
+	}
+	&__email {
+		animation: 1s slide-right 0.7s backwards paused;
+		background-color: $brand-light-black;
+		color: $brand-white;
+		border: none;
+		padding: 15px;
+		padding-left: 20px;
+		border-radius: 5px;
+		font-size: 1em;
+		margin: 0;
+		width: 120px;
+		display: inline-block;
+	}
+	&__submit {
+		animation: 1s slide-left 0.7s backwards paused;
+		@extend %button3;
+		@include font-size($button-font-sizes);
+		margin: -4px;
+		margin-top: -10px;
+		display: inline-block;
+		&:hover {
+			background-color: $brand-light-black;
+			border-bottom: $brand-black;
+		}
+	}
+	&__social {
+		padding: 40px 20px;
+		color: $brand-white;
+		font-size: 1.3em;
+		text-align: center;
+		&__item {
+			display: inline-block;
+			padding: 15px 10px;
+			border: 2px solid $brand-white;
+			border-radius: 50%;
+			margin: 14px 10px;
+			transition: 0.4s;
+			&:hover {
+				border-color: $brand-light-black;
+				background-color: $brand-light-black;
+				transition: 0.4s;
+				cursor: pointer;
+			}
+			&:nth-child(1) {
+				animation: 1s bg 1s backwards paused;
+			}
+			&:nth-child(2) {
+				animation: 1s bg 1.2s backwards paused;
+			}
+			&:nth-child(3) {
+				animation: 1s bg 1.4s backwards paused;
+			}
+			&:nth-child(4) {
+				animation: 1s bg 1.6s backwards paused;
+			}
+			&:nth-child(5) {
+				animation: 1s bg 1.8s backwards paused;
+			}
+			&:nth-child(6) {
+				animation: 1s bg 2s backwards paused;
+			}
+			&:nth-child(7) {
+				animation: 1s bg 2.2s backwards paused;
+			}
+			&:nth-child(8) {
+				animation: 1s bg 2.4s backwards paused;
+			}
+
+		}
+	}
+}
+.downline {
+	background-color: $brand-light-black;
+	padding: 60px 20px;
+	color: $brand-white;
+	overflow: hidden;
+	&__search {
+		animation: 1s slide-up 2.7s backwards paused;
+		float: right;
+		&>input {
+			background-color: $brand-light-black;
+			border: none;
+			padding: 5px;
+			width: 120px;
+		}
+		&>i {
+			color: $brand-icons;
+		}
+	}
+	&__credits {
+		animation: 1s slide-up 3s backwards paused;
+		padding-top: 60px;
+		text-align: center;
+		@include font-size($downline-font-sizes);
+		line-height: 140%;
+		&>p>span {
+			color: #0c9acc;
+			transition: 0.3s;
+			&:hover {
+				color: $brand-blue;
+				transition: 0.3s;
+			}
+		}
+	}
+	&__menu {
+		animation: 1s slide-up 3.3s backwards paused;
+		padding-top: 40px;
+		float: right;
+		&__item {
+			display: inline-block;
+			@include font-size($downline-font-sizes);
+			padding-right: 4px;
+			border-right: 1px solid $brand-icons;
+			&:nth-child(9) {
+				border: none;
+			}
+			&__link {
+				color: $brand-white;
+				transition: 0.3s;
+				&:hover {
+					transition: 0.3s;
+					color: $brand-blue;
+				}
+			}
+			
+		}
+	}
+}
+@media (min-width: 550px) {
+	.subscribe {
+		&__description,
+		&__title,
+		&__social {
+			padding-left: calc(50% - 260px);
+			padding-right: calc(50% - 260px);
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.subscribe {
+		&__title,
+		&__description,
+		&__social {
+			padding-left: calc(50% - 400px);
+			padding-right: calc(50% - 400px);
+		}
+		&__email {
+			width: 350px;
+		}
+	}
+	.downline {
+			padding-left: calc(50% - 470px);
+			padding-right: calc(50% - 470px);
+	}
+}
+@media (min-width: 1200px) {
+	.subscribe {
+		&__title,
+		&__description,
+		&__ {
+			padding-left: calc(50% - 580px);
+			padding-right: calc(50% - 580px);
+		}
+	}
+	.downline {
+			padding-left: calc(50% - 580px);
+			padding-right: calc(50% - 580px);
+	}
+}
+@media (min-width: 1000px) {
+	.downline {
+		padding-top: 0px;
+		&__search {
+			&>input {
+				font-size: 1.1em;
+				width: 160px;
+			}
+			&>i {
+
+				font-size: 1.1em;
+			}
+		}
+		&__credits {
+			clear:both;
+			display: inline-block;
+			padding-top: 80px;
+		}
+		&__menu {
+			padding-top: 0;
+			margin-top: -20px;
+			&__item {
+				padding: 0 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+%header4 {
+	@include font-size($h5-font-sizes);
+	color: $brand-gray-description;
+	padding: 20px 0;
+	line-height: 120%;
+}
+%header3 {
+	@include font-size($h4-font-sizes);
+	color: $brand-light-black;
+	font-family: $base-font;
+	padding: 20px;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+%header2 {
+	@include font-size($h3-font-sizes);
+	color: $brand-light-black;
+	line-height: 120%;
+	letter-spacing: 1px;
+	padding: 20px 0;
+}
+%header {
+	@include font-size($h2-font-sizes);
+	color: $brand-white;
+	padding: 40px 0;
+	line-height: 130%;
+}
